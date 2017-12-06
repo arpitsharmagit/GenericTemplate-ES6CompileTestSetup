@@ -1,0 +1,29 @@
+{
+  "name": "generic-app",
+  "version": "1.0.0",
+  "description": "This is basic skeleton and dev environment setup of electron app. just type 'npm install' in root directory.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "electron-mocha --reporter spec tests/*.spec.js",
+    "test-renderer": "electron-mocha --renderer --reporter spec tests/*.spec.js"
+  },
+  "private": true,
+  "keywords": [
+    "electron",
+    "es6",
+    "atom"
+  ],
+  "author": "arpit.sharma1@globallogic.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2016-node5": "^1.1.2",
+    "babel-preset-react": "^6.24.1",
+    "electron-mocha": "^4.0.0",
+    "electron-prebuilt-compile": "^1.6.11"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
